@@ -1,0 +1,13 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.main-content {
+    position: fixed;
+    top: 30px;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    height: 100%;
+}
