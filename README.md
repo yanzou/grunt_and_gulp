@@ -152,3 +152,14 @@ gulp.task('default', ['clean'], function () {
   gulp.start('sass', 'coffee', 'jade');
 });
 ```
+
+Witch is better?
+----------------
+Grunt are going to include adding support for piping data between multiple tasks, 
+ and emitting task output as data events in it's roadmap. 
+That maight make grunt better and easier to use in the featrue.
+
+Gulp's style is "Streams all the way down". This is the philosophy I prefer more.
+
+
+
