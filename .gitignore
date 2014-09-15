@@ -3,4 +3,6 @@ node_modules
 bower_components
 build
 public
+public_grunt
+.sass-cache
 .idea

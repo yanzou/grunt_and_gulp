@@ -32,7 +32,6 @@ gulp.task('clean', function () {
 
 gulp.task('jade', function () {
   return gulp.src(paths.jade)
-    .pipe(changed(BUILD_PATH, { extension: '.html' }))
     .pipe(jade({ pretty: true }))
     .pipe(gulp.dest(BUILD_PATH));
 });
@@ -40,14 +39,13 @@ gulp.task('jade', function () {
 gulp.task('coffee', function() {
   gulp.src(paths.scripts)
     .pipe(gulpCoffee({bare: true}).on('error', gutil.log))
-    .pipe(changed(BUILD_PATH + '/assets/js'))
     .pipe(concat('main.js'))
     .pipe(gulp.dest(BUILD_PATH + '/assets/js'));
 });
 
 gulp.task('sass', function () {
   return gulp.src(paths.sass)
-    .pipe(concat('main.css'))
+    .pipe(concat('main.sass'))
     .pipe(sass({ errLogToConsole: true }))
     //.pipe(minifycss())
     .pipe(gulp.dest(BUILD_PATH + '/assets/styles'));
