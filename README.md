@@ -162,7 +162,8 @@ That maight make grunt better and easier to use in the featrue.
 Gulp's style is "Streams all the way down". This is the philosophy I prefer more.
 
 
-Orthers
+Other Article
 -------
 [gulp-grunt-whatever](http://blog.ponyfoo.com/2014/01/09/gulp-grunt-whatever)
+
 [presentation-build-wars-gulp-vs-grunt](http://markdalgleish.github.io/presentation-build-wars-gulp-vs-grunt/)
