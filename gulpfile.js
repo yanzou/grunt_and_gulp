@@ -49,6 +49,7 @@ gulp.task('sass', function () {
   return gulp.src(paths.sass)
     .pipe(concat('main.css'))
     .pipe(sass({ errLogToConsole: true }))
+    //.pipe(minifycss())
     .pipe(gulp.dest(BUILD_PATH + '/assets/styles'));
 });
 
