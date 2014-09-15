@@ -45,7 +45,8 @@ Grunt
 -------
 
 A little bit over-configurated and not so agile, not easy to read
-```
+
+```javascript
 grunt.initConfig({
     clean: {
         dist: {
@@ -105,7 +106,8 @@ Gulp
 --------
 
 Simple, flexible and graceful, just as a working-flow to make the job done
-```
+
+```javascript
 var BUILD_PATH = 'public',
     paths = {
         jade: 'src/tpls/index.jade',
