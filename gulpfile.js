@@ -8,7 +8,7 @@ var path = require('path'),
     sass = require('gulp-sass'),
     minifycss = require('gulp-minify-css'),
     jade = require('gulp-jade'),
-    clean = require('gulp-clean'),
+    rimraf = require('gulp-rimraf'),
     gulpCoffee = require('gulp-coffee');
 
 var BUILD_PATH = 'public',
@@ -27,7 +27,7 @@ var BUILD_PATH = 'public',
 // ------------------------------------------------
 gulp.task('clean', function () {
   return gulp.src(BUILD_PATH + '/**/*', { read: false })
-    .pipe(clean({ force: true }));
+    .pipe(rimraf({ force: true }));
 });
 
 gulp.task('jade', function () {
