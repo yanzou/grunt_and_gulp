@@ -41,7 +41,10 @@ public
 3. join all coffee file --> compile to "main.js" --> copy to bulid path
 4. compile index.jade to index.html  --> copy to bulid path 
 
-Grunt, a little bit over-configurated and not so agile, not easy to read
+Grunt
+-------
+
+A little bit over-configurated and not so agile, not easy to read
 ```
 grunt.initConfig({
     clean: {
@@ -98,7 +101,10 @@ grunt.registerTask('default', ['clean', 'sass', 'concat', 'coffee', 'jade']);
 ```
 
 
-Gulp is simple, flexible and graceful, just as a working-flow to make the job done
+Gulp 
+--------
+
+Simple, flexible and graceful, just as a working-flow to make the job done
 ```
 var BUILD_PATH = 'public',
     paths = {
